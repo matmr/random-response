@@ -11,17 +11,17 @@ from modal_two_part.functions import frf, smurf_base_excitation, forced_response
 
 
 
-fatigue_path = r'E:\work_matjaz\delovni_synced\matjaz_research\y_sample_multiaxial\fatigue'
+fatigue_path = r'\path\to\models'
 
 
 if __name__ == '__main__':
 
     # -- Load data from pickle -- eigenfrequencies, eigenvectors, nodesets ...
-    f = open(r'{0}\kinematic_model_hand_2.mod'.format(fatigue_path), 'rb')
+    f = open(r'{0}\kinematic_model.pkl'.format(fatigue_path), 'rb')
     data_k = pickle.load(f, encoding='latin1')
     f.close()
 
-    f = open(r'{0}\kinematic_model_hand_2_f.mod'.format(fatigue_path), 'rb')
+    f = open(r'{0}\force_model.pkl'.format(fatigue_path), 'rb')
     data_f = pickle.load(f, encoding='latin1')
     f.close()
 
