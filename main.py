@@ -7,7 +7,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 
-from modal_two_part.functions import frf, smurf_base_excitation, forced_response
+from modal_two_part.functions import smurf_base_excitation, forced_response
 
 
 
